@@ -5,9 +5,5 @@ Bài 1: Giải thích các câu lệnh: git init, git add <file_name>, git add .
     + git commit -m "message" : commit file từ staging lên Reponsitory .
 
 Bài 2: 
-a. Tạo 3 file: file1, file2, file3 
-b. Chạy lệnh: git init : Khởi tạo folder
-c. Chạy lệnh: git commit -m”init project” : không commit được vì chưa add file lên staging.
-d. Chạy lệnh: git add file1 : Không add được vì file lúc này nằm trong folder lesson 2 => muốn add chính xác phải lấy path.
-e. Chạy lệnh: git commit -m”add file1” : Không chạy được vì trước đó chưa add được file1 lên staging.
-f. Chạy lệnh: git add file : không chạy được vì không hiểu file này lấy từ đâu.
+    + file1: Nằm trên vùng Reponsitory
+    + file2, file3: nằm trên vùng working directory
