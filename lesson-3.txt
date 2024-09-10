@@ -1,0 +1,104 @@
+Bài 1:
+    + git commit --comend : Thay đổi name message.
+    + git commit --comend -m"<message>": thay đổi name message cũ thành message mới.
+    + git restore --staged <file>: chuyển file từ vùng Staging về vùng Working Directory.
+    + git reset HEAD~1: chuyển 1 commit từ vùng Reponsitory về vùng Working Directory.
+
+Bài 2:
+    1. Khởi tạo 3 file: file1, file2, file3 => 3 file được khởi tạo trên máy local
+        Working Directory:
+
+        Staging Area:
+
+        Reponsitory:
+
+    2. git init => Khởi tạo 3 file vào vùng Working Directory:
+        Working Directory:
+                file1   file2   file3
+        Staging Area:
+
+        Reponsitory:
+
+    3. git commit -m"init project" => Không có gì để commit vì vùng staging đang trống.
+
+    4. git add file1 => Chuyển file1 từ vùng Working Directory lên vùng Staging Area:
+        Working Directory:
+                file2   file3
+        Staging Area:
+                file1
+        Reponsitory:
+
+    5. git commit -m"add file": chuyển file1 từ vùng Staging lên vùng Reponsitory:
+        Working Directory:
+                file2   file3
+        Staging Area:
+                
+        Reponsitory:
+                file1
+
+    6. git add . : thực hiện chuyển 2 file: file 2, file3 từ vùng Working lên vùng Staging:
+        Working Directory:
+                
+        Staging Area:
+                file2   file3
+        Reponsitory:
+                file1
+
+    7. git restore --staged file2 : thực hiện chuyển file2 từ vùng Staging về vùng Working:
+        Working Directory:
+                file2
+        Staging Area:
+                file3
+        Reponsitory:
+                file1
+
+    8. git commit -m"add all files" : thực hiện chuyển file3 từ vùng Staging lên vùng Reponsitory:
+        Working Directory:
+                file2
+        Staging Area:
+                
+        Reponsitory:
+                file1   file3
+
+    9. git reset HEAD~1 : chuyển file3 từ vùng Reponsitory về vùng Working Directory:
+        Working Directory:
+                file2   file3
+        Staging Area:
+                
+        Reponsitory:
+                file1   
+Bài 3:
+    1. git init : khởi tạo thư mục "lesson-3-git" 
+        Working Directory:
+                
+        Staging Area:
+                
+        Reponsitory:
+                
+    2. Tạo 3 file: file1.txt, file2.txt, oops/file3.txt trên vùng Working Directory:
+        Working Directory:
+                file1   file2   file3  
+        Staging Area:
+                
+        Reponsitory:
+    3. Thêm file .gitignore với 2 dòng file1.txt, oops/ : mục đích khi commit all file sẽ không commit file1, file3 
+        Working Directory:
+                file2 
+        Staging Area:
+                
+        Reponsitory:
+
+    4. git add . : thêm tất cả các file vùng Working lên vùng Staging:
+        Working Directory:
+                
+        Staging Area:
+                file2 
+        Reponsitory:
+
+    5. git commit -m"init project" : Thực hiện chuyển file từ vùng Staging lên vùng Reponsitory
+        Working Directory:
+                
+        Staging Area:
+                
+        Reponsitory:
+                file2 
