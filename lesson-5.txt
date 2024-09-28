@@ -1,0 +1,38 @@
+Câu 1: Cấu trúc DOM gồm các thẻ chính
+
+1. <!DOCTYPE html>: Khai báo loại tài liệu, xác định đây là tài liệu HTML5.
+
+2. <html>: Thẻ gốc, chứa toàn bộ nội dung của trang.
+
+3. <head>: Chứa các thông tin meta, tiêu đề, liên kết tới CSS, và các script cần thiết.
+    Trong <head> bao gồm các thẻ con:
+        <title>: Tiêu đề của trang, hiển thị trên tab của trình duyệt.
+        <meta>: Thẻ cung cấp thông tin về tài liệu, như charset hoặc mô tả.
+        <link>: Kết nối tới các tệp CSS bên ngoài.
+        <script>: Kết nối tới các tệp JavaScript hoặc chứa mã JavaScript trực tiếp.
+
+4. <body>: Chứa nội dung chính của trang, như văn bản, hình ảnh, và các phần tử tương tác.
+    Trong <body> bao gồm các thẻ con: 
+        <header>: Phần đầu trang, thường chứa tiêu đề và điều hướng.
+        <nav>: Điều hướng của trang web, chứa các liên kết đến các phần khác.
+        <main>: Nội dung chính của trang.
+        <section>: Một phần cụ thể của nội dung, có thể được phân loại.
+        <article>: Nội dung độc lập, như bài viết hoặc tin tức.
+        <footer>: Phần cuối của trang, thường chứa thông tin bản quyền hoặc liên kết liên quan.
+
+
+Câu 2: Mô tả cấu trúc của một bảng bao gồm: 
+
+1. <table>: Thẻ gốc để bắt đầu một bảng.
+
+2. <thead>: Thẻ chứa các hàng tiêu đề của bảng, thường được sử dụng để định dạng phần tiêu đề.
+
+3. <tbody>: Thẻ chứa các hàng chính của bảng, chứa dữ liệu thực tế.
+
+4. <tfoot>: Thẻ chứa các hàng tổng kết hoặc thông tin bổ sung ở cuối bảng.
+
+5. <tr>: Thẻ đại diện cho một hàng trong bảng.
+
+6. <th>: Thẻ đại diện cho một ô tiêu đề trong bảng. Nội dung trong thẻ này thường được in đậm và canh giữa.
+
+7. <td>: Thẻ đại diện cho một ô dữ liệu trong bảng.
