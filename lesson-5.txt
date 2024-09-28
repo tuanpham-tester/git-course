@@ -21,7 +21,7 @@ Câu 1: Cấu trúc DOM gồm các thẻ chính
         <footer>: Phần cuối của trang, thường chứa thông tin bản quyền hoặc liên kết liên quan.
 
 
-Câu 2: Mô tả cấu trúc của một bảng bao gồm: 
+Câu 2: Mô tả cấu trúc của một bảng bao gồm các thẻ:
 
 1. <table>: Thẻ gốc để bắt đầu một bảng.
 

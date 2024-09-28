@@ -1,6 +1,6 @@
 Bài 1:
-    + git commit --comend : Thay đổi name message.
-    + git commit --comend -m"<message>": thay đổi name message cũ thành message mới.
+    + git commit --amend : Thay đổi name message.
+    + git commit --amend -m"<message>": thay đổi name message cũ thành message mới.
     + git restore --staged <file>: chuyển file từ vùng Staging về vùng Working Directory.
     + git reset HEAD~1: chuyển 1 commit từ vùng Reponsitory về vùng Working Directory.
 
@@ -77,13 +77,13 @@ Bài 3:
                 
     2. Tạo 3 file: file1.txt, file2.txt, oops/file3.txt trên vùng Working Directory:
         Working Directory:
-                file1   file2   file3  
+                file1.txt   file2.txt   file3.txt  
         Staging Area:
                 
         Reponsitory:
     3. Thêm file .gitignore với 2 dòng file1.txt, oops/ : mục đích khi commit all file sẽ không commit file1, file3 
         Working Directory:
-                file2 
+                file2.txt .gitignore
         Staging Area:
                 
         Reponsitory:
@@ -92,7 +92,7 @@ Bài 3:
         Working Directory:
                 
         Staging Area:
-                file2 
+                 file2.txt .gitignore
         Reponsitory:
 
     5. git commit -m"init project" : Thực hiện chuyển file từ vùng Staging lên vùng Reponsitory
@@ -101,4 +101,4 @@ Bài 3:
         Staging Area:
                 
         Reponsitory:
-                file2 
+                 file2.txt .gitignore
